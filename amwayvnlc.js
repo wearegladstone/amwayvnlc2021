@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+  //VH
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+  window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+
   var currentBeInspired = 0;
   var wallsrc = "https://my.walls.io/tsa2y?nobackground=1&amp;show_header=0&amp;autoscroll=0&amp;columns=2";
   var shareurl = "";
@@ -15,7 +24,18 @@ $(document).ready(function(){
   $('#mainBeInspiredButton').click(function(){
 
     transitionScenes($('#mainPage'), $('#beInspiredPage'));
-    $('#beInspiredMainMenu').css("visibility","visible");
+
+  });
+
+  ('#mainVNLCButton').click(function(){
+
+    transitionScenes($('#mainPage'), $('#vnlcPage'));
+
+  });
+
+  ('#mainHealthCButton').click(function(){
+
+    transitionScenes($('#mainPage'), $('#healthPage'));
 
   });
 
@@ -338,9 +358,16 @@ $(document).ready(function(){
     transitionScenes($('#beInspiredPage'), $('#amwayMomentsPage'));
 
   });
+
   $('#beHealthButton').click(function(){
 
     transitionScenes($('#beInspiredPage'), $('#healthPage'));
+
+  });
+
+  $('#beVNLCButton').click(function(){
+
+    transitionScenes($('#beInspiredPage'), $('#vnlcPage'));
 
   });
 
@@ -415,6 +442,12 @@ $(document).ready(function(){
 
   });
 
+  $('#healthVNLCButton').click(function(){
+
+    transitionScenes($('#beInspiredPage'), $('#vnlcPage'));
+
+  });
+
   //Amway Moments Page Button Clicks
   $('#amwayMomentsBEButton').click(function(){
 
@@ -425,6 +458,12 @@ $(document).ready(function(){
   $('#amwayMomentsHealthButton').click(function(){
 
     transitionScenes($('#amwayMomentsPage'), $('#healthPage'));
+
+  });
+
+  $('#amwayMomentsVNLCButton').click(function(){
+
+    transitionScenes($('#beInspiredPage'), $('#vnlcPage'));
 
   });
 
@@ -539,14 +578,6 @@ $(document).ready(function(){
 
   });
 
-  //VH
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-  window.addEventListener('resize', () => {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-  });
 
 });
