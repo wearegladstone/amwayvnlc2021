@@ -1,21 +1,11 @@
 var currentBeInspired = 0;
 
 $(document).ready(function(){
-  //Hide other blocks
-  //Amway Moments
-  $('#amwayMomentsPage').css("visibility","hidden");
-
-  //Be Inspired
-  $('#beInspiredPage').css("visibility","hidden");
-  $('#beInspiredMainMenu').css("visibility","hidden");
-  $('#newAchieversMenu').css("visibility","hidden");
-  $('#py2019Block').css("visibility","hidden");
-  $('#py2020Block').css("visibility","hidden");
-  $('#fcacaMenu').css("visibility","hidden");
 
   //Main Page Button Clicks
   $('#mainAmwayMomentsButton').click(function(){
-
+    
+    
     transitionScenes($('#mainPage'), $('#amwayMomentsPage'));
 
   });
@@ -121,7 +111,6 @@ $(document).ready(function(){
   $('#amwayMomentsBEButton').click(function(){
 
     transitionScenes($('#amwayMomentsPage'), $('#beInspiredPage'));
-    $('#beInspiredMainMenu').css("visibility","visible");
 
   });
 
@@ -130,26 +119,17 @@ $(document).ready(function(){
   function transitionScenes($from, $to)
   {
 
-    if($('#bottomLeftLogo').attr('opacity') == 0)
-    {
-
-      $('#bottomLeftLogo').animate({opacity : 1}, 250);
+    $from.fadeOut(500, function(){
       
-    }
-
-    $from.animate({opacity : 0},500, function(){
-
-      if($from.attr('id') == $("#beInspiredPage").attr('id'))
+      if($to.attr('id') == $("#beInspiredPage").attr('id'))
       {
-
-        $('#beInspiredMainMenu').css("visibility","hidden");
-
+        currentBeInspired = 0;
       }
-
-      $from.css("visibility", "hidden");
-      $to.css("visibility", "visible").animate({opacity : 1}, 500);
+      
+      $to.fadeIn(500)
+    
     });
-
+    
   }
 
   //Vimeo Player
