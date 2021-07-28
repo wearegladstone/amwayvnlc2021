@@ -130,6 +130,13 @@ $(document).ready(function(){
   function transitionScenes($from, $to)
   {
 
+    if($('#bottomLeftLogo').attr('opacity') == 0)
+    {
+
+      $('#bottomLeftLogo').animate({opacity : 1}, 250);
+      
+    }
+
     $from.animate({opacity : 0},500, function(){
 
       if($from.attr('id') == $("#beInspiredPage").attr('id'))
@@ -166,5 +173,5 @@ $(document).ready(function(){
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 
   });
-  
+
 });
