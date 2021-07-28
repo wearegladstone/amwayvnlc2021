@@ -79,8 +79,6 @@ $('#fcacaBackButton').click(function(){
 transitionScenes($('#fcacaMenu'), $('#beInspiredMainMenu'));
 currentBeInspired = 0;
 
-}
-
 });
 
 $('#newAchieversButton').click(function(){
