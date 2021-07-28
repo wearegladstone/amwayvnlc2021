@@ -9,13 +9,16 @@ $('#amwayMomentsPage').css("visibility","hidden");
 $('#beInspiredPage').css("visibility","hidden");
 $('#newAchieversMenu').css("visibility","hidden");
 $('#py2019Block').css("visibility","hidden");
+$('#py2020Block').css("visibility","hidden");
 
 //Main Page Button Clicks
 $('#mainAmwayMomentsButton').click(function(){
 
+transitionScenes($('#mainPage'), $('#amwayMomentsPage'));
+/*
 $('#mainPage').animate({opacity : 0},500, function(){
 $('#mainPage').css("visibility", "hidden");
-$('#amwayMomentsPage').css("visibility", "visible").animate({opacity : 1}, 500);
+$('#amwayMomentsPage').css("visibility", "visible").animate({opacity : 1}, 500);*/
 });
 
 });
@@ -114,6 +117,16 @@ $('#py2020Block').css("visibility", "visible").animate({opacity : 1}, 500);
 //Moments
 //VNLC
 
+function transitionScenes($from, $to)
+{
+
+  $from.animate({opacity : 0},500, function(){
+  $from.css("visibility", "hidden");
+  currentBeInspired = 3;
+  $to.css("visibility", "visible").animate({opacity : 1}, 500);
+  });
+
+}
 
 //Vimeo Player
 //Intro Video Scene
