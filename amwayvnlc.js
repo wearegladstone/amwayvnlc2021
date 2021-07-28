@@ -129,12 +129,12 @@ $(document).ready(function(){
       
       if($to.attr('id') == $("#amwayMomentsPage").attr('id'))
       {
-        $('#wallsio-iframe').attr('src', wallsrc);
+        $('#amwayMomentsEmbed').attr('src', wallsrc);
       }
       
       if($from.attr('id') == $("#amwayMomentsPage").attr('id'))
       {
-        $('#wallsio-iframe').attr('src', "");
+        $('#amwayMomentsEmbed').attr('src', "");
       }
       
       $to.fadeIn(500)
