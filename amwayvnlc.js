@@ -114,7 +114,6 @@ transitionScenes($('#beInspiredMainMenu'), $('#fcacaMenu'));
 $('#beAmwayMomentsButton').click(function(){
 
 transitionScenes($('#beInspiredPage'), $('#amwayMomentsPage'));
-$('#beInspiredMainMenu').css("visibility","hidden");
 
 });
 
@@ -133,6 +132,12 @@ function transitionScenes($from, $to)
 {
 
   $from.animate({opacity : 0},500, function(){
+
+    if($from == $(#"beInspiredPage"))
+    {
+        $('#beInspiredMainMenu').css("visibility","hidden");
+    }
+
   $from.css("visibility", "hidden");
   $to.css("visibility", "visible").animate({opacity : 1}, 500);
   });
