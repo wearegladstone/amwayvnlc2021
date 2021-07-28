@@ -469,6 +469,7 @@ $(document).ready(function(){
 
   //VNLC Page Button Clicks
 
+  //VNLC Program
   $('#vnlcProgramShareButton').click(function(){
 
     shareurl = "https://assets.amwayvnlc2021.com/assets/VNLCProgram.jpg";
@@ -488,6 +489,19 @@ $(document).ready(function(){
 
   });
 
+  $('#vnlcProgramBackButton').click(function(){
+
+    transitionScenes($('#vnlcProgramPage'), $('#vnlcMainMenu'));
+
+  });
+
+  $('#vnlcProgramButton').click(function(){
+
+    transitionScenes($('#vnlcMainMenu'), $('#vnlcProgramPage'));
+
+  });
+
+  //Side Menu
   $('#vnlcBEButton').click(function(){
 
     transitionScenes($('#vnlcPage'), $('#beInspiredPage'));
