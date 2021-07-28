@@ -21,7 +21,7 @@ $(document).ready(function(){
   });
 
 
-  
+
   $('#mainBeInspiredButton').click(function(){
 
     transitionScenes($('#mainPage'), $('#beInspiredPage'));
@@ -166,3 +166,5 @@ $(document).ready(function(){
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 
   });
+  
+});
