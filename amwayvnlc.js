@@ -137,9 +137,9 @@ var introVideoPlayer = new Vimeo.Player(introVideoiFrame);
 introVideoPlayer.on('ended', function() {
 
 $('#introVideo').fadeOut(500, function(){introVideoiFrame.attr('src', "");});
-});
 
 });
+
 
 //VH
 let vh = window.innerHeight * 0.01;
