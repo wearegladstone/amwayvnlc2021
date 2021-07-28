@@ -10,6 +10,7 @@ $('#beInspiredPage').css("visibility","hidden");
 $('#newAchieversMenu').css("visibility","hidden");
 $('#py2019Block').css("visibility","hidden");
 $('#py2020Block').css("visibility","hidden");
+$('#fcacaMenu').css("visibility","hidden");
 
 //Main Page Button Clicks
 $('#mainAmwayMomentsButton').click(function(){
