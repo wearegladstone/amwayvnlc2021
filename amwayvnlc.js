@@ -16,10 +16,7 @@ $('#fcacaMenu').css("visibility","hidden");
 $('#mainAmwayMomentsButton').click(function(){
 
 transitionScenes($('#mainPage'), $('#amwayMomentsPage'));
-/*
-$('#mainPage').animate({opacity : 0},500, function(){
-$('#mainPage').css("visibility", "hidden");
-$('#amwayMomentsPage').css("visibility", "visible").animate({opacity : 1}, 500);*/
+
 });
 
 });
@@ -27,10 +24,7 @@ $('#amwayMomentsPage').css("visibility", "visible").animate({opacity : 1}, 500);
 //Be Inspired
 $('#mainBeInspiredButton').click(function(){
 
-$('#mainPage').animate({opacity : 0},500, function(){
-$('#mainPage').css("visibility", "hidden");
-$('#beInspiredPage').css("visibility", "visible").animate({opacity : 1}, 500);
-});
+transitionScenes($('#mainPage'), $('#beInspiredPage'));
 
 });
 
@@ -57,29 +51,33 @@ switch(currentBeInspired)
 
 case 1:
 
-$('#newAchieversMenu').animate({opacity : 0},500, function(){
-$('#newAchieversMenu').css("visibility", "hidden");
+transitionScenes($('#newAchieversMenu'), $('#beInspiredMainMenu'));
 currentBeInspired = 0;
-$('#beInspiredMainMenu').css("visibility", "visible").animate({opacity : 1}, 500);
-});
 
 break;
 
 case 2:
-$('#py2019Block').animate({opacity : 0},500, function(){
-$('#py2019Block').css("visibility", "hidden");
+
+transitionScenes($('#py2019Block'), $('#newAchieversRightBlock'));
 currentBeInspired = 1;
-$('#newAchieversRightBlock').css("visibility", "visible").animate({opacity : 1}, 500);
-});
+
 break;
 
 case 3:
-$('#py2020Block').animate({opacity : 0},500, function(){
-$('#py2020Block').css("visibility", "hidden");
+
+transitionScenes($('#py2020Block'), $('#newAchieversRightBlock'));
 currentBeInspired = 1;
-$('#newAchieversRightBlock').css("visibility", "visible").animate({opacity : 1}, 500);
-});
+
 break;
+
+}
+
+});
+
+$('#fcacaBackButton').click(function(){
+
+transitionScenes($('#fcacaMenu'), $('#beInspiredMainMenu'));
+currentBeInspired = 0;
 
 }
 
@@ -87,35 +85,47 @@ break;
 
 $('#newAchieversButton').click(function(){
 
-$('#beInspiredMainMenu').animate({opacity : 0},500, function(){
-$('#beInspiredMainMenu').css("visibility", "hidden");
+transitionScenes($('#beInspiredMainMenu'), $('#newAchieversMenu'));
 currentBeInspired = 1;
-$('#newAchieversMenu').css("visibility", "visible").animate({opacity : 1}, 500);
-});
 
 });
 
 $('#py2019Button').click(function(){
 
-$('#newAchieversRightBlock').animate({opacity : 0},500, function(){
-$('#newAchieversRightBlock').css("visibility", "hidden");
+transitionScenes($('#newAchieversRightBlock'), $('#py2019Block'));
 currentBeInspired = 2;
-$('#py2019Block').css("visibility", "visible").animate({opacity : 1}, 500);
-});
 
 });
+
 
 $('#py2020Button').click(function(){
 
-$('#newAchieversRightBlock').animate({opacity : 0},500, function(){
-$('#newAchieversRightBlock').css("visibility", "hidden");
+transitionScenes($('#newAchieversRightBlock'), $('#py2020Block'));
 currentBeInspired = 3;
-$('#py2020Block').css("visibility", "visible").animate({opacity : 1}, 500);
-});
 
 });
+
+$('#fcacaButton').click(function(){
+
+transitionScenes($('#beInspiredMainMenu'), $('#fcacaMenu'));
+currentBeInspired = 4;
+
+});
+
+$('#beAmwayMomentsButton').click(function(){
+
+transitionScenes($('#beInspiredPage'), $('#amwayMomentsPage'));
+
+});
+
 //Health
 //Moments
+$('#amwayMomentsBEButton').click(function(){
+
+transitionScenes($('#amwayMomentsPage'), $('#beInspiredPage'));
+
+});
+
 //VNLC
 
 function transitionScenes($from, $to)
