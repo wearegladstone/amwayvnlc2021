@@ -349,21 +349,21 @@ $(document).ready(function(){
 
   $('#nutriliteButton').click(function(){
 
-      $('#healthvideo-iframe').attr('src', 'https://player.vimeo.com/video/575770520');
-      $('#nutriliteButton').attr('src', "images/NutriliteChosenButton.png");
-      $('#artistryButton').attr('src', "images/ArtistryButton.png");
+    $('#healthvideo-iframe').attr('src', 'https://player.vimeo.com/video/575770520');
+    $('#nutriliteButton').attr('src', "images/NutriliteChosenButton.png");
+    $('#artistryButton').attr('src', "images/ArtistryButton.png");
 
-      currentHealthVideo = 1;
+    currentHealthVideo = 1;
 
   });
 
   $('#artistryButton').click(function(){
 
-      $('#healthvideo-iframe').attr('src', 'https://player.vimeo.com/video/577943445');
-      $('#nutriliteButton').attr('src', "images/NutriliteButton.png");
-      $('#artistryButton').attr('src', "images/ArtistryChosenButton.png");
+    $('#healthvideo-iframe').attr('src', 'https://player.vimeo.com/video/577943445');
+    $('#nutriliteButton').attr('src', "images/NutriliteButton.png");
+    $('#artistryButton').attr('src', "images/ArtistryChosenButton.png");
 
-      currentHealthVideo = 2;
+    currentHealthVideo = 2;
 
   });
 
@@ -444,8 +444,8 @@ $(document).ready(function(){
   function openImage($imageSrc)
   {
 
-      $('#imageBlockImage').attr('src', $imageSrc);
-      $('#imageBlock').fadeIn(500);
+    $('#imageBlockImage').attr('src', $imageSrc);
+    $('#imageBlock').fadeIn(500);
 
   }
 
@@ -453,40 +453,40 @@ $(document).ready(function(){
   function transitionScenes($from, $to)
   {
 
+    if($to.attr('id') == $("#beInspiredPage").attr('id'))
+    {
+      currentBeInspired = 0;
+    }
+
+    if($to.attr('id') == $("#amwayMomentsPage").attr('id'))
+    {
+      $('#amwayMomentsEmbed').attr('src', wallsrc);
+    }
+
+    if($to.attr('id') == $("#healthPage").attr('id'))
+    {
+      $('#healthvideo-iframe').attr('src', 'https://player.vimeo.com/video/575770520');
+      $('#nutriliteButton').attr('src', "images/NutriliteChosenButton.png");
+      $('#artistryButton').attr('src', "images/ArtistryButton.png");
+
+      currentHealthVideo = 1;
+    }
+
+    if($from.attr('id') == $("#amwayMomentsPage").attr('id'))
+    {
+      $('#amwayMomentsEmbed').attr('src', "");
+    }
+
+    if($('#bottomLeftLogo').css('opacity') == 0)
+    {
+
+      $('#bottomLeftLogo').animate({opacity: 1}, 500);
+
+    }
+
     $from.fadeOut(500, function(){
 
-      if($to.attr('id') == $("#beInspiredPage").attr('id'))
-      {
-        currentBeInspired = 0;
-      }
-
-      if($to.attr('id') == $("#amwayMomentsPage").attr('id'))
-      {
-        $('#amwayMomentsEmbed').attr('src', wallsrc);
-      }
-
-      if($to.attr('id') == $("#healthPage").attr('id'))
-      {
-        $('#healthvideo-iframe').attr('src', 'https://player.vimeo.com/video/575770520');
-        $('#nutriliteButton').attr('src', "images/NutriliteChosenButton.png");
-        $('#artistryButton').attr('src', "images/ArtistryButton.png");
-
-        currentHealthVideo = 1;
-      }
-
-      if($from.attr('id') == $("#amwayMomentsPage").attr('id'))
-      {
-        $('#amwayMomentsEmbed').attr('src', "");
-      }
-
-      if($('#bottomLeftLogo').css('opacity') == 0)
-      {
-
-        $('#bottomLeftLogo').animate({opacity: 1}, 500);
-
-      }
-
-      $to.fadeIn(500)
+      $to.fadeIn(500);
 
     });
 
