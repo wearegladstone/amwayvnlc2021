@@ -59,6 +59,7 @@ break;
 case 2:
 
 transitionScenes($('#py2019Block'), $('#newAchieversRightBlock'));
+console.log("hi");
 currentBeInspired = 1;
 
 break;
