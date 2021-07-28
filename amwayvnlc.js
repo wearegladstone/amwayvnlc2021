@@ -7,7 +7,7 @@ $(document).ready(function(){
   window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-    });
+  });
 
   var currentBeInspired = 0;
   var wallsrc = "https://my.walls.io/tsa2y?nobackground=1&amp;show_header=0&amp;autoscroll=0&amp;columns=2";
@@ -468,6 +468,26 @@ $(document).ready(function(){
   });
 
   //VNLC Page Button Clicks
+
+  $('#vnlcProgramShareButton').click(function(){
+
+    shareurl = "https://assets.amwayvnlc2021.com/assets/VNLCProgram.jpg";
+
+    $('#shareBlock').fadeIn(500);
+
+  });
+
+  $('#vnlcProgramDownloadButton').click(function(){
+
+    var a = document.createElement('a');
+    a.href = "https://assets.amwayvnlc2021.com/assets/VNLCProgram.jpg";
+    a.download = "VNLProgram.jpg";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+
+  });
+
   $('#vnlcBEButton').click(function(){
 
     transitionScenes($('#vnlcPage'), $('#beInspiredPage'));
