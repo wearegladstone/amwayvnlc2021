@@ -133,8 +133,11 @@ function transitionScenes($from, $to)
 
   $from.animate({opacity : 0},500, function(){
 
-    if($from == $('#beInspiredPage'))
+    console.log($from);
+    
+    if($from == $("#beInspiredPage"))
     {
+
         $('#beInspiredMainMenu').css("visibility","hidden");
     }
 
