@@ -137,6 +137,13 @@ $(document).ready(function(){
         $('#amwayMomentsEmbed').attr('src', "");
       }
       
+      if($('#bottomLeftLogo').css('opacity') == 0)
+      {
+        
+        $('#bottomLeftLogo').animate({opacity: 1}, 500);
+        
+      }
+      
       $to.fadeIn(500)
     
     });
