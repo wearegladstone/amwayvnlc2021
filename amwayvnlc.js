@@ -339,6 +339,21 @@ $(document).ready(function(){
   });
 
   //Health Page Button Clicks
+  var currentHealthVideo = 1;
+
+  $('#nutriliteButton').click(function(){
+
+      $('#healthvideo-iframe').attr('src', 'https://player.vimeo.com/video/575770520');
+      currentHealthVideo = 1;
+
+  });
+
+  $('#nutriliteButton').click(function(){
+
+      $('#healthvideo-iframe').attr('src', 'https://player.vimeo.com/video/577943445');
+      currentHealthVideo = 2;
+
+  });
 
   //Amway Moments Page Button Clicks
   $('#amwayMomentsBEButton').click(function(){
