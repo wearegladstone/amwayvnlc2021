@@ -1,4 +1,5 @@
 var currentBeInspired = 0;
+var wallsrc = "https://my.walls.io/tsa2y?nobackground=1&amp;show_header=0&amp;autoscroll=0&amp;columns=2";
 
 $(document).ready(function(){
 
@@ -124,6 +125,16 @@ $(document).ready(function(){
       if($to.attr('id') == $("#beInspiredPage").attr('id'))
       {
         currentBeInspired = 0;
+      }
+      
+      if($to.attr('id') == $("#amwayMomentsPage").attr('id'))
+      {
+        $('#wallsio-iframe').attr('src') = wallsrc;
+      }
+      
+      if($from.attr('id') == $("#amwayMomentsPage").attr('id'))
+      {
+        $('#wallsio-iframe').attr('src') = "";
       }
       
       $to.fadeIn(500)
