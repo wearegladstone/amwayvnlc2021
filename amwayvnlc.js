@@ -468,7 +468,23 @@ $(document).ready(function(){
   });
 
   //VNLC Page Button Clicks
+  $('#vnlcBEButton').click(function(){
 
+    transitionScenes($('#vnlcPage'), $('#beInspiredPage'));
+
+  });
+
+  $('#vnlcHealthButton').click(function(){
+
+    transitionScenes($('#vnlcPage'), $('#healthPage'));
+
+  });
+
+  $('#vnlcAmwayMomentsButton').click(function(){
+
+    transitionScenes($('#vnlcPage'), $('#amwayMomentsPage'));
+
+  });
 
   //Open Video Block
   function openVideo($url)
