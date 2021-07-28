@@ -27,13 +27,13 @@ $(document).ready(function(){
 
   });
 
-  ('#mainVNLCButton').click(function(){
+  $('#mainVNLCButton').click(function(){
 
     transitionScenes($('#mainPage'), $('#vnlcPage'));
 
   });
 
-  ('#mainHealthCButton').click(function(){
+  $('#mainHealthCButton').click(function(){
 
     transitionScenes($('#mainPage'), $('#healthPage'));
 
