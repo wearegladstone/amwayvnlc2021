@@ -337,6 +337,11 @@ $(document).ready(function(){
     transitionScenes($('#beInspiredPage'), $('#amwayMomentsPage'));
 
   });
+  $('#beHealthButton').click(function(){
+
+    transitionScenes($('#beInspiredPage'), $('#healthPage'));
+
+  });
 
   //Health Page Button Clicks
   var currentHealthVideo = 1;
@@ -355,10 +360,28 @@ $(document).ready(function(){
 
   });
 
+  $('#healthBEButton').click(function(){
+
+    transitionScenes($('#healthPage'), $('#beInspiredPage'));
+
+  });
+
+  $('#healthAmwayMomentsButton').click(function(){
+
+    transitionScenes($('#healthPage'), $('#amwayMomentsPage'));
+
+  });
+
   //Amway Moments Page Button Clicks
   $('#amwayMomentsBEButton').click(function(){
 
     transitionScenes($('#amwayMomentsPage'), $('#beInspiredPage'));
+
+  });
+
+  $('#amwayMomentsHealthButton').click(function(){
+
+    transitionScenes($('#amwayMomentsPage'), $('#healthPage'));
 
   });
 
