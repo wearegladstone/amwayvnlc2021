@@ -444,7 +444,7 @@ $(document).ready(function(){
 
   $('#healthVNLCButton').click(function(){
 
-    transitionScenes($('#beInspiredPage'), $('#vnlcPage'));
+    transitionScenes($('#healthPage'), $('#vnlcPage'));
 
   });
 
@@ -463,7 +463,7 @@ $(document).ready(function(){
 
   $('#amwayMomentsVNLCButton').click(function(){
 
-    transitionScenes($('#beInspiredPage'), $('#vnlcPage'));
+    transitionScenes($('#amwayMomentsPage'), $('#vnlcPage'));
 
   });
 
