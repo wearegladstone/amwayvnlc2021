@@ -107,7 +107,6 @@ currentBeInspired = 3;
 $('#fcacaButton').click(function(){
 
 transitionScenes($('#beInspiredMainMenu'), $('#fcacaMenu'));
-currentBeInspired = 4;
 
 });
 
@@ -132,7 +131,6 @@ function transitionScenes($from, $to)
 
   $from.animate({opacity : 0},500, function(){
   $from.css("visibility", "hidden");
-  currentBeInspired = 3;
   $to.css("visibility", "visible").animate({opacity : 1}, 500);
   });
 
