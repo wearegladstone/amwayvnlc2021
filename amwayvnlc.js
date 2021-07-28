@@ -7,6 +7,7 @@ $('#amwayMomentsPage').css("visibility","hidden");
 
 //Be Inspired
 $('#beInspiredPage').css("visibility","hidden");
+$('#beInspiredMainMenu').css("visibility","hidden");
 $('#newAchieversMenu').css("visibility","hidden");
 $('#py2019Block').css("visibility","hidden");
 $('#py2020Block').css("visibility","hidden");
@@ -25,6 +26,7 @@ transitionScenes($('#mainPage'), $('#amwayMomentsPage'));
 $('#mainBeInspiredButton').click(function(){
 
 transitionScenes($('#mainPage'), $('#beInspiredPage'));
+$('#beInspiredMainMenu').css("visibility","visible");
 
 });
 
@@ -59,7 +61,6 @@ break;
 case 2:
 
 transitionScenes($('#py2019Block'), $('#newAchieversRightBlock'));
-console.log("hi");
 currentBeInspired = 1;
 
 break;
@@ -113,6 +114,7 @@ transitionScenes($('#beInspiredMainMenu'), $('#fcacaMenu'));
 $('#beAmwayMomentsButton').click(function(){
 
 transitionScenes($('#beInspiredPage'), $('#amwayMomentsPage'));
+$('#beInspiredMainMenu').css("visibility","hidden");
 
 });
 
@@ -121,6 +123,7 @@ transitionScenes($('#beInspiredPage'), $('#amwayMomentsPage'));
 $('#amwayMomentsBEButton').click(function(){
 
 transitionScenes($('#amwayMomentsPage'), $('#beInspiredPage'));
+$('#beInspiredMainMenu').css("visibility","visible");
 
 });
 
