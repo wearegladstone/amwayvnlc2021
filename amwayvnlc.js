@@ -2,6 +2,7 @@ $(document).ready(function(){
 
   var currentBeInspired = 0;
   var wallsrc = "https://my.walls.io/tsa2y?nobackground=1&amp;show_header=0&amp;autoscroll=0&amp;columns=2";
+  var shareurl = "";
 
   //Main Page Button Clicks
   $('#mainAmwayMomentsButton').click(function(){
@@ -383,6 +384,25 @@ $(document).ready(function(){
 
   });
 
+  $('#healthShareButton').click(function(){
+
+    if(currentHealthVideo == 1)
+    {
+
+      shareurl = "https://player.vimeo.com/video/575770520";
+
+    }
+    else if(currentHealthVideo == 2)
+    {
+
+      shareurl = "https://player.vimeo.com/video/577943445";
+
+    }
+
+    $('#shareBlock').fadeIn(500);
+
+  });
+
   $('#healthBEButton').click(function(){
 
     transitionScenes($('#healthPage'), $('#beInspiredPage'));
@@ -445,6 +465,15 @@ $(document).ready(function(){
         $('#amwayMomentsEmbed').attr('src', wallsrc);
       }
 
+      if($to.attr('id') == $("#healthPage").attr('id'))
+      {
+        $('#healthvideo-iframe').attr('src', 'https://player.vimeo.com/video/575770520');
+        $('#nutriliteButton').attr('src', "images/NutriliteChosenButton.png");
+        $('#artistryButton').attr('src', "images/ArtistryButton.png");
+
+        currentHealthVideo = 1;
+      }
+
       if($from.attr('id') == $("#amwayMomentsPage").attr('id'))
       {
         $('#amwayMomentsEmbed').attr('src', "");
@@ -475,6 +504,20 @@ $(document).ready(function(){
   $('#imageCloseButton').click(function(){
 
     $('#imageBlock').fadeOut(500);
+
+  });
+
+  //Share Block
+  $('#shareCloseButton').click(function(){
+
+    $('#shareBlock').fadeOut(500);
+
+  });
+
+  $('#whatsappShareButton').click(function(){
+
+    var encodedURL = encodeURI(shareurl);
+    window.open("https://wa.me/?text=" + encodedURL);
 
   });
 
