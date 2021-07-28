@@ -521,6 +521,13 @@ $(document).ready(function(){
 
   });
 
+  $('#facebookShareButton').click(function(){
+
+    var encodedURL = encodeURI(shareurl);
+    window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodedURL);
+
+  });
+
   //Vimeo Player
   //Intro Video Scene
   var introVideoiFrame = $('#introvideo-iframe');
