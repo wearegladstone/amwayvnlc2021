@@ -349,14 +349,37 @@ $(document).ready(function(){
   $('#nutriliteButton').click(function(){
 
       $('#healthvideo-iframe').attr('src', 'https://player.vimeo.com/video/575770520');
+      $('#nutriliteButton').attr('src', "images/NutriliteChosenButton.png");
+      $('#artistryButton').attr('src', "images/ArtistryButton.png");
+
       currentHealthVideo = 1;
 
   });
 
-  $('#nutriliteButton').click(function(){
+  $('#artistryButton').click(function(){
 
       $('#healthvideo-iframe').attr('src', 'https://player.vimeo.com/video/577943445');
+      $('#nutriliteButton').attr('src', "images/NutriliteButton.png");
+      $('#artistryButton').attr('src', "images/ArtistryChosenButton.png");
+
       currentHealthVideo = 2;
+
+  });
+
+  $('#healthDownloadButton').click(function(){
+
+    if(currentHealthVideo == 1)
+    {
+
+      window.open("https://player.vimeo.com/external/575770520.hd.mp4?s=f7a9c3b4d9de70d0dea65ce3120609a5f663f262&profile_id=175&download=1");
+
+    }
+    else if(currentHealthVideo == 2)
+    {
+
+      window.open("https://player.vimeo.com/external/577943445.hd.mp4?s=ea06bb51cb341df8e0fcbe205213c883e3605d66&profile_id=175&download=1");
+
+    }
 
   });
 
