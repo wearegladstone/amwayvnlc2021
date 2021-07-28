@@ -149,7 +149,15 @@ $(document).ready(function(){
     });
     
   }
+  
+  //Video Block
+  $('#videoCloseButton').click(function(){
 
+    $('#videoBlock').fadeOut(500);
+    $('#video-iframe').attr('src','');
+
+  });
+  
   //Vimeo Player
   //Intro Video Scene
   var introVideoiFrame = $('#introvideo-iframe');
