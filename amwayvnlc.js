@@ -1,7 +1,7 @@
-var currentBeInspired = 0;
-var wallsrc = "https://my.walls.io/tsa2y?nobackground=1&amp;show_header=0&amp;autoscroll=0&amp;columns=2";
-
 $(document).ready(function(){
+
+  var currentBeInspired = 0;
+  var wallsrc = "https://my.walls.io/tsa2y?nobackground=1&amp;show_header=0&amp;autoscroll=0&amp;columns=2";
 
   //Main Page Button Clicks
   $('#mainAmwayMomentsButton').click(function(){
@@ -10,8 +10,6 @@ $(document).ready(function(){
     transitionScenes($('#mainPage'), $('#amwayMomentsPage'));
 
   });
-
-
 
   $('#mainBeInspiredButton').click(function(){
 
@@ -202,22 +200,157 @@ $(document).ready(function(){
 
   });
 
+  $('#py2020ABO1').click(function(){
+
+    openVideo("https://player.vimeo.com/video/575726497");
+
+  });
+
+  $('#py2020ABO2').click(function(){
+
+    openImage("images/Wong Mee San & Kee Kok Joo.jpg");
+
+  });
+
+  $('#py2020ABO3').click(function(){
+
+    openVideo("https://player.vimeo.com/video/575726690");
+
+  });
+
+  $('#py2020ABO4').click(function(){
+
+    openVideo("https://player.vimeo.com/video/575725873");
+
+  });
+
+  $('#py2020ABO5').click(function(){
+
+    openVideo("https://player.vimeo.com/video/575724451");
+
+  });
+
+  $('#py2020ABO6').click(function(){
+
+    openVideo("https://player.vimeo.com/video/575726851");
+
+  });
+
+  $('#py2020ABO7').click(function(){
+
+    openVideo("https://player.vimeo.com/video/575724048");
+
+  });
+
+  $('#py2020ABO8').click(function(){
+
+    openVideo("https://player.vimeo.com/video/575727003");
+
+  });
+
+  $('#py2020ABO9').click(function(){
+
+    openVideo("https://player.vimeo.com/video/575727313");
+
+  });
+
+  $('#py2020ABO10').click(function(){
+
+    openImage("images/Ong Kok Leong.jpg");
+
+  });
+
+  $('#py2020ABO11').click(function(){
+
+    openVideo("https://player.vimeo.com/video/575726604");
+
+  });
+
+  $('#py2020ABO12').click(function(){
+
+    openVideo("https://player.vimeo.com/video/575727155");
+
+  });
+
+  $('#fcacaABO1').click(function(){
+
+    openVideo("https://player.vimeo.com/video/577960249");
+
+  });
+
+  $('#fcacaABO2').click(function(){
+
+    openVideo("https://player.vimeo.com/video/577958555");
+
+  });
+
+  $('#fcacaABO3').click(function(){
+
+    openVideo("https://player.vimeo.com/video/577956117");
+
+  });
+
+  $('#fcacaABO4').click(function(){
+
+    openVideo("https://player.vimeo.com/video/577959425");
+
+  });
+
+  $('#fcacaABO5').click(function(){
+
+    openVideo("https://player.vimeo.com/video/577952871");
+
+  });
+
+  $('#fcacaABO6').click(function(){
+
+    openVideo("https://player.vimeo.com/video/577955153");
+
+  });
+
+  $('#fcacaABO7').click(function(){
+
+    openVideo("https://player.vimeo.com/video/577955448");
+
+  });
+
+  $('#fcacaABO8').click(function(){
+
+    openVideo("https://player.vimeo.com/video/577953699");
+
+  });
+
+  $('#fcacaABO9').click(function(){
+
+    openVideo("https://player.vimeo.com/video/577955785");
+
+  });
+
+  $('#fcacaABO10').click(function(){
+
+    openVideo("https://player.vimeo.com/video/577951895");
+
+  });
+
   $('#beAmwayMomentsButton').click(function(){
 
     transitionScenes($('#beInspiredPage'), $('#amwayMomentsPage'));
 
   });
 
-  //Health
-  //Moments
+  //Health Page Button Clicks
+
+  //Amway Moments Page Button Clicks
   $('#amwayMomentsBEButton').click(function(){
 
     transitionScenes($('#amwayMomentsPage'), $('#beInspiredPage'));
 
   });
 
-  //VNLC
+  //VNLC Page Button Clicks
 
+
+  //Open Video Block
   function openVideo($url)
   {
 
@@ -226,6 +359,7 @@ $(document).ready(function(){
 
   }
 
+  //Open Image Block
   function openImage($imageSrc)
   {
 
@@ -234,6 +368,7 @@ $(document).ready(function(){
 
   }
 
+  //Transition Handler
   function transitionScenes($from, $to)
   {
 
@@ -292,7 +427,6 @@ $(document).ready(function(){
     $('#introVideo').fadeOut(1000, function(){introVideoiFrame.attr('src', "");});
 
   });
-
 
   //VH
   let vh = window.innerHeight * 0.01;
