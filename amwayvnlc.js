@@ -571,7 +571,8 @@ $(document).ready(function(){
     {
 
       transitionScenes($('#csProfile'), $('#csMainMenu'));
-
+      currentCSStep = 1;
+      
     }
 
   });
@@ -618,6 +619,13 @@ $(document).ready(function(){
 
 
     }
+
+  });
+
+
+  $('#corporateSpeechesButton').click(function(){
+
+    transitionScenes($('#vnlcMainMenu'), $('#csPage'));
 
   });
 
