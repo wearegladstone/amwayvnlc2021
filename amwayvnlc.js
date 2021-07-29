@@ -490,7 +490,7 @@ $(document).ready(function(){
         a.download = "VNLCProgram.jpg";
         document.body.appendChild(a);
         a.click();
-
+      });
   });
 
   $('#vnlcProgramBackButton').click(function(){
