@@ -693,6 +693,32 @@ $(document).ready(function(){
 
   });
 
+  //Snippets
+  $('#snippetsButton').click(function(){
+
+    transitionScenes($('#vnlcMainMenu'), $('#snippetsPage'));
+
+  });
+
+  $('#snippetsBackButton').click(function(){
+
+    transitionScenes($('#snippetsPage'), $('#vnlcMainMenu'));
+
+  });
+
+  $('#snippetsDownloadButton').click(function(){
+
+    window.open("https://player.vimeo.com/external/577944983.sd.mp4?s=bc989a36c37d9731e221b1c4e3b5aa055653b42d&profile_id=165&download=1");
+
+  });
+
+  $('#snippetsShareButton').click(function(){
+
+    shareurl = "https://player.vimeo.com/video/577944983";
+    $('#shareBlock').fadeIn(500);
+
+  });
+
   //Side Menu
   $('#vnlcBEButton').click(function(){
 
