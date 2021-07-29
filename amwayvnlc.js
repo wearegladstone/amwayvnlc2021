@@ -491,6 +491,7 @@ $(document).ready(function(){
         document.body.appendChild(a);
         a.click();
       });
+
   });
 
   $('#vnlcProgramBackButton').click(function(){
@@ -716,6 +717,66 @@ $(document).ready(function(){
 
     shareurl = "https://player.vimeo.com/video/577944983";
     $('#shareBlock').fadeIn(500);
+
+  });
+
+  //BSM
+  $('#bsmButton').click(function(){
+
+    transitionScenes($('#vnlcMainMenu'), $('#bsmPage'));
+
+  });
+
+  $('#bsmBackButton').click(function(){
+
+    transitionScenes($('#bsmPage'), $('#vnlcMainMenu'));
+
+  });
+
+  //Instagram
+  $('#dinnerShareButton').click(function(){
+
+    shareurl = "https://assets.amwayvnlc2021.com/assets/DinnerAtHomePoster.png";
+    $('#shareBlock').fadeIn(500);
+
+  });
+
+  $('#dinnerDownloadButton').click(function(){
+
+    fetch("https://assets.amwayvnlc2021.com/assets/DinnerAtHomePoster.png")
+      .then(response => response.blob())
+      .then(blob => {
+        const blobURL = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = blobURL;
+        a.style = "display: none";
+        a.download = "VNLCProgram.jpg";
+        document.body.appendChild(a);
+        a.click();
+      });
+
+  });
+
+  $('#dinnerButton').click(function(){
+
+
+    transitionScenes($('#filterPage'), $('#dinnerPage'));
+  //  $('#dinnerButton').attr('src', 'images/DinnerAtHomeClickedButton.png');
+  //  $('#filterButton').attr('src', 'images/igButton.png');
+
+  });
+
+  $('#filterButton').click(function(){
+
+    transitionScenes($('#dinnerPage'), $('#filterPage'));
+    //$('#dinnerButton').attr('src', 'images/DinnerAtHomeClickedButton.png');
+  //  $('#filterButton').attr('src', 'images/igClickedButton.png');
+
+  });
+
+  $('#filterLinkButton').click(function(){
+
+    window.open("https://www.instagram.com/ar/893315877922337/");
 
   });
 
