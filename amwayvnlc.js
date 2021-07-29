@@ -511,51 +511,51 @@ $(document).ready(function(){
 
   $('#csButton1').click(function(){
 
-    transitionScenes($('#csMainMenu'), $('#csProfile'));
     currentSpeaker = 1;
     currentCSStep = 2;
     hideAllProfiles();
     showspeaker(currentSpeaker);
+    transitionScenes($('#csMainMenu'), $('#csProfile'));
 
   });
 
   $('#csButton2').click(function(){
 
-    transitionScenes($('#csMainMenu'), $('#csProfile'));
     currentSpeaker = 2;
     currentCSStep = 2;
     hideAllProfiles();
     showspeaker(currentSpeaker);
+    transitionScenes($('#csMainMenu'), $('#csProfile'));
 
   });
 
   $('#csButton3').click(function(){
 
-    transitionScenes($('#csMainMenu'), $('#csProfile'));
     currentSpeaker = 3;
     currentCSStep = 2;
     hideAllProfiles();
     showspeaker(currentSpeaker);
+    transitionScenes($('#csMainMenu'), $('#csProfile'));
 
   });
 
   $('#csButton4').click(function(){
 
-    transitionScenes($('#csMainMenu'), $('#csProfile'));
     currentSpeaker = 4;
     currentCSStep = 2;
     hideAllProfiles();
     showspeaker(currentSpeaker);
+    transitionScenes($('#csMainMenu'), $('#csProfile'));
 
   });
 
   $('#csButton5').click(function(){
 
-    transitionScenes($('#csMainMenu'), $('#csProfile'));
     currentSpeaker = 5;
     currentCSStep = 2;
     hideAllProfiles();
     showspeaker(currentSpeaker);
+    transitionScenes($('#csMainMenu'), $('#csProfile'));
 
   });
 
@@ -572,7 +572,7 @@ $(document).ready(function(){
 
       transitionScenes($('#csProfile'), $('#csMainMenu'));
       currentCSStep = 1;
-      
+
     }
 
   });
@@ -632,11 +632,11 @@ $(document).ready(function(){
   function hideAllProfiles()
   {
 
-    $('#profile1').css('display') = "none";
-    $('#profile2').css('display') = "none";
-    $('#profile3').css('display') = "none";
-    $('#profile4').css('display') = "none";
-    $('#profile5').css('display') = "none";
+    $('#profile1').css('display', 'none');
+    $('#profile2').css('display', 'none');
+    $('#profile3').css('display', 'none');
+    $('#profile4').css('display', 'none');
+    $('#profile5').css('display', 'none');
 
   }
 
