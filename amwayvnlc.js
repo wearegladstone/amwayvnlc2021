@@ -480,12 +480,16 @@ $(document).ready(function(){
 
   $('#vnlcProgramDownloadButton').click(function(){
 
-    var a = document.createElement('a');
-    a.href = "https://assets.amwayvnlc2021.com/assets/VNLCProgram.jpg";
-    a.download = "VNLProgram.jpg";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    fetch("https://assets.amwayvnlc2021.com/assets/VNLCProgram.jpg")
+      .then(response => response.blob())
+      .then(blob => {
+        const blobURL = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = blobURL;
+        a.style = "display: none";
+        a.download = "VNLCProgram.jpg";
+        document.body.appendChild(a);
+        a.click();
 
   });
 
