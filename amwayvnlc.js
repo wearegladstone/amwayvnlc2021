@@ -1,14 +1,5 @@
 $(document).ready(function(){
 
-  //VH
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-  window.addEventListener('resize', () => {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  });
-
   var currentBeInspired = 0;
   var wallsrc = "https://my.walls.io/tsa2y?nobackground=1&amp;show_header=0&amp;autoscroll=0&amp;columns=2";
   var shareurl = "";
@@ -931,3 +922,13 @@ $(document).ready(function(){
   });
 
 });
+
+
+  //VH
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+  window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  });
