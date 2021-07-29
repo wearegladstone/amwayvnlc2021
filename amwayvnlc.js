@@ -505,6 +505,173 @@ $(document).ready(function(){
 
   });
 
+  //Corporate Speeches
+  var currentSpeaker = 1;
+  var currentCSStep = 1;
+
+  $('#csButton1').click(function(){
+
+    transitionScenes($('#csMainMenu'), $('#csProfile'));
+    currentSpeaker = 1;
+    currentCSStep = 2;
+    hideAllProfiles();
+    showspeaker(currentSpeaker);
+
+  });
+
+  $('#csButton2').click(function(){
+
+    transitionScenes($('#csMainMenu'), $('#csProfile'));
+    currentSpeaker = 2;
+    currentCSStep = 2;
+    hideAllProfiles();
+    showspeaker(currentSpeaker);
+
+  });
+
+  $('#csButton3').click(function(){
+
+    transitionScenes($('#csMainMenu'), $('#csProfile'));
+    currentSpeaker = 3;
+    currentCSStep = 2;
+    hideAllProfiles();
+    showspeaker(currentSpeaker);
+
+  });
+
+  $('#csButton4').click(function(){
+
+    transitionScenes($('#csMainMenu'), $('#csProfile'));
+    currentSpeaker = 4;
+    currentCSStep = 2;
+    hideAllProfiles();
+    showspeaker(currentSpeaker);
+
+  });
+
+  $('#csButton5').click(function(){
+
+    transitionScenes($('#csMainMenu'), $('#csProfile'));
+    currentSpeaker = 5;
+    currentCSStep = 2;
+    hideAllProfiles();
+    showspeaker(currentSpeaker);
+
+  });
+
+  $('#csBackButton').click(function(){
+
+    if(currentCSStep == 1)
+    {
+
+        transitionScenes($('#csPage'), $('#vnlcMainMenu'));
+
+    }
+    else if(currentCSStep == 2)
+    {
+
+      transitionScenes($('#csProfile'), $('#csMainMenu'));
+
+    }
+
+  });
+
+  $('#csNextSpeakerButton').click(function(){
+
+    switch(currentSpeaker)
+    {
+
+      case 1:
+
+          $('#profile1').fadeOut(500, function(){ $('#profile2').fadeIn(500)});
+          currentSpeaker = 2;
+
+      break;
+
+      case 2:
+
+          $('#profile2').fadeOut(500, function(){ $('#profile3').fadeIn(500)});
+          currentSpeaker = 3;
+
+      break;
+
+      case 3:
+
+          $('#profile3').fadeOut(500, function(){ $('#profile4').fadeIn(500)});
+          currentSpeaker = 4;
+
+      break;
+
+      case 4:
+
+          $('#profile4').fadeOut(500, function(){ $('#profile5').fadeIn(500)});
+          currentSpeaker = 5;
+
+      break;
+
+      case 5:
+
+          $('#profile5').fadeOut(500, function(){ $('#profile1').fadeIn(500)});
+          currentSpeaker = 1;
+
+      break;
+
+
+    }
+
+  });
+
+  function hideAllProfiles()
+  {
+
+    $('#profile1').css('display') = "none";
+    $('#profile2').css('display') = "none";
+    $('#profile3').css('display') = "none";
+    $('#profile4').css('display') = "none";
+    $('#profile5').css('display') = "none";
+
+  }
+
+  function showspeaker(num)
+  {
+
+    switch(num)
+    {
+
+      case 1:
+
+        $('#profile1').fadeIn(500);
+
+      break;
+
+      case 2:
+
+        $('#profile2').fadeIn(500);
+
+      break;
+
+      case 3:
+
+        $('#profile3').fadeIn(500);
+
+      break;
+
+      case 4:
+
+        $('#profile4').fadeIn(500);
+
+      break;
+
+      case 5:
+
+        $('#profile5').fadeIn(500);
+
+      break;
+
+    }
+
+  }
+
   //Side Menu
   $('#vnlcBEButton').click(function(){
 
