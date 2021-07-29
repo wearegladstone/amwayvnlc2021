@@ -734,6 +734,12 @@ $(document).ready(function(){
   });
 
   //Instagram
+  $('#instagramBackButton').click(function(){
+
+    transitionScenes($('#instagramPage'), $('#vnlcMainMenu'));
+
+  });
+
   $('#dinnerShareButton').click(function(){
 
     shareurl = "https://assets.amwayvnlc2021.com/assets/DinnerAtHomePoster.png";
@@ -759,10 +765,9 @@ $(document).ready(function(){
 
   $('#dinnerButton').click(function(){
 
-    console.log("hi");
     transitionScenes($('#filterPage'), $('#dinnerPage'));
-  //  $('#dinnerButton').attr('src', 'images/DinnerAtHomeClickedButton.png');
-  //  $('#filterButton').attr('src', 'images/igButton.png');
+    $('#dinnerButton').attr('src', 'images/DinnerAtHomeClickedButton.png');
+    $('#filterButton').attr('src', 'images/igButton.png');
 
   });
 
@@ -770,12 +775,11 @@ $(document).ready(function(){
 
     console.log("hi");
     transitionScenes($('#dinnerPage'), $('#filterPage'));
-    //$('#dinnerButton').attr('src', 'images/DinnerAtHomeClickedButton.png');
-  //  $('#filterButton').attr('src', 'images/igClickedButton.png');
+    $('#dinnerButton').attr('src', 'images/DinnerAtHomeClickedButton.png');
+    $('#filterButton').attr('src', 'images/igClickedButton.png');
 
   });
 
-  
   $('#filterLinkButton').click(function(){
 
     window.open("https://www.instagram.com/ar/893315877922337/");
@@ -840,6 +844,17 @@ $(document).ready(function(){
       $('#artistryButton').attr('src', "images/ArtistryButton.png");
 
       currentHealthVideo = 1;
+    }
+
+    if($to.attr('id') == $("#instagramPage").attr('id'))
+    {
+
+      $('#dinnerPage').css('display', 'block');
+      $('#filterPage').css('display', 'none');
+
+      $('#dinnerButton').attr('src', 'images/DinnerAtHomeClickedButton.png');
+      $('#filterButton').attr('src', 'images/igButton.png');
+
     }
 
     if($from.attr('id') == $("#amwayMomentsPage").attr('id'))
