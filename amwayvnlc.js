@@ -680,6 +680,19 @@ $(document).ready(function(){
 
   }
 
+  //NCA
+  $('#ncaButton').click(function(){
+
+    transitionScenes($('#vnlcMainMenu'), $('#ncaPage'));
+
+  });
+
+  $('#ncaBackButton').click(function(){
+
+    transitionScenes($('#ncaPage'), $('#vnlcMainMenu'));
+
+  });
+
   //Side Menu
   $('#vnlcBEButton').click(function(){
 
