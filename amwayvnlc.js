@@ -786,6 +786,12 @@ $(document).ready(function(){
 
   });
 
+  $('#vnlcInstagramButton').click(function(){
+
+    transitionScenes($('#vnlcMainMenu'), $('#instagramPage'));
+
+  });
+
   //Side Menu
   $('#vnlcBEButton').click(function(){
 
@@ -923,7 +929,5 @@ $(document).ready(function(){
     $('#introVideo').fadeOut(1000, function(){introVideoiFrame.attr('src', "");});
 
   });
-
-
 
 });
