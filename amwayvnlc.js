@@ -759,7 +759,7 @@ $(document).ready(function(){
 
   $('#dinnerButton').click(function(){
 
-
+    console.log("hi");
     transitionScenes($('#filterPage'), $('#dinnerPage'));
   //  $('#dinnerButton').attr('src', 'images/DinnerAtHomeClickedButton.png');
   //  $('#filterButton').attr('src', 'images/igButton.png');
@@ -768,6 +768,7 @@ $(document).ready(function(){
 
   $('#filterButton').click(function(){
 
+    console.log("hi");
     transitionScenes($('#dinnerPage'), $('#filterPage'));
     //$('#dinnerButton').attr('src', 'images/DinnerAtHomeClickedButton.png');
   //  $('#filterButton').attr('src', 'images/igClickedButton.png');
