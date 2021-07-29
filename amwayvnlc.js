@@ -775,6 +775,7 @@ $(document).ready(function(){
 
   });
 
+  
   $('#filterLinkButton').click(function(){
 
     window.open("https://www.instagram.com/ar/893315877922337/");
