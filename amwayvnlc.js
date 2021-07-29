@@ -764,9 +764,8 @@ $(document).ready(function(){
 
   $('#filterButton').click(function(){
 
-    console.log("hi");
     transitionScenes($('#dinnerPage'), $('#filterPage'));
-    $('#dinnerButton').attr('src', 'images/DinnerAtHomeClickedButton.png');
+    $('#dinnerButton').attr('src', 'images/DinnerAtHomeButton.png');
     $('#filterButton').attr('src', 'images/igClickedButton.png');
 
   });
