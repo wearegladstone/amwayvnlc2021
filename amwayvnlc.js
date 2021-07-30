@@ -471,7 +471,7 @@ $(document).ready(function(){
 
   $('#vnlcProgramDownloadButton').click(function(){
 
-    fetch("https://assets.amwayvnlc2021.com/assets/VNLCProgram.jpg")
+    fetch("images/VNLCProgram.jpg")
       .then(response => response.blob())
       .then(blob => {
         const blobURL = URL.createObjectURL(blob);
@@ -740,7 +740,7 @@ $(document).ready(function(){
 
   $('#dinnerDownloadButton').click(function(){
 
-    fetch("https://assets.amwayvnlc2021.com/assets/DinnerAtHomePoster.png")
+    fetch("images/DinnerAtHomePoster.png")
       .then(response => response.blob())
       .then(blob => {
         const blobURL = URL.createObjectURL(blob);
