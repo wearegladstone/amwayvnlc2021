@@ -924,7 +924,8 @@ $(document).ready(function(){
 
 $('#skipButton').click(function(){
 
-  $('#skipButton').fadeOut(1000, function(){introVideoiFrame.attr('src', '');});
+  $('#introVideo').fadeOut(1000, function(){introVideoiFrame.attr('src', '');});
+  $('#skipButton').fadeOut(1000);
 
 });
   //VH
