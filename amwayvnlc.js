@@ -920,14 +920,16 @@ $(document).ready(function(){
 
   });
 
+
+  $('#skipButton').click(function(){
+
+    $('#introVideo').fadeOut(1000, function(){introVideoiFrame.attr('src', '');});
+    $('#skipButton').fadeOut(1000);
+
+  });
+  
 });
 
-$('#skipButton').click(function(){
-
-  $('#introVideo').fadeOut(1000, function(){introVideoiFrame.attr('src', '');});
-  $('#skipButton').fadeOut(1000);
-
-});
   //VH
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
