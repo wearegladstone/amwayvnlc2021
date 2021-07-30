@@ -403,7 +403,7 @@ $(document).ready(function(){
   });
 
   $('#healthShareButton').click(function(){
-
+    /*
     if(currentHealthVideo == 1)
     {
 
@@ -418,7 +418,7 @@ $(document).ready(function(){
     }
 
     $('#shareBlock').fadeIn(500);
-
+    */
   });
 
   $('#healthBEButton').click(function(){
@@ -706,8 +706,8 @@ $(document).ready(function(){
 
   $('#snippetsShareButton').click(function(){
 
-    shareurl = "https://player.vimeo.com/video/577944983";
-    $('#shareBlock').fadeIn(500);
+  /*  shareurl = "https://player.vimeo.com/video/577944983";
+    $('#shareBlock').fadeIn(500);*/
 
   });
 
