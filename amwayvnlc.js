@@ -916,7 +916,7 @@ $(document).ready(function(){
 
   introVideoPlayer.on('ended', function() {
 
-    $('#introVideo').fadeOut(1000, function(){introVideoiFrame.attr('src', "");});
+    $('#introVideo').fadeOut(1000, function(){introVideoiFrame.attr('src', '');});
 
   });
 
