@@ -922,10 +922,10 @@ $(document).ready(function(){
 
 });
 
-$('#introVideo').click(function(){
+$('#skipButton').click(function(){
 
-  $('#introVideo').fadeOut(1000, function(){introVideoiFrame.attr('src', '');});
-  
+  $('#skipButton').fadeOut(1000, function(){introVideoiFrame.attr('src', '');});
+
 });
   //VH
   let vh = window.innerHeight * 0.01;
