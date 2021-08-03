@@ -920,7 +920,7 @@ $('#facebookShareButton').click(function(){
 
 $('#popUpButton').click(function(){
 
-  window.open("https://www.amwayvnlc2021.com/live-stream");
+  window.open("https://www.amwayvnlc2021.com/live-stream", "_self");
 
 });
 
