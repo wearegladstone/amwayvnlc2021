@@ -374,7 +374,7 @@ $(document).ready(function(){
   //Health Page Button Clicks
 
   $('#healthStrongerButton').click(function(){
-
+    console.log("HI");
     transitionScenes($('#healthMainMenu'), $('#healthStronger'));
 
   });
