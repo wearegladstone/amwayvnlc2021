@@ -676,6 +676,9 @@ $(document).ready(function(){
     $('#shakeReyhanaButton').attr('src','images/shakeReyhanaButton.png');
     $('#shakeInfoButton').attr('src','images/shakeInfoButton.png');
     $('#shakeVideo').attr('src','https://player.vimeo.com/video/577956715');
+    $('#shakeTopTitle1').fadeIn(100);
+    $('#shakeTopTitle2').fadeOut(100);
+    $('#shakeTopTitle3').fadeOut(100);
     currentShakeStep = 1;
 
   });
@@ -694,6 +697,9 @@ $(document).ready(function(){
     $('#shakeInfoButton').attr('src','images/shakeInfoButton.png');
     transitionScenes($('#shakeInfoImage'), $('#shakeVideoEmbed'));
     $('#shakeVideo').attr('src','https://player.vimeo.com/video/577956715');
+    $('#shakeTopTitle1').fadeIn(100);
+    $('#shakeTopTitle2').fadeOut(100);
+    $('#shakeTopTitle3').fadeOut(100);
     currentShakeStep = 1;
 
   });
@@ -705,6 +711,9 @@ $(document).ready(function(){
     $('#shakeInfoButton').attr('src','images/shakeInfoButton.png');
     transitionScenes($('#shakeInfoImage'), $('#shakeVideoEmbed'));
     $('#shakeVideo').attr('src','https://player.vimeo.com/video/575717977');
+    $('#shakeTopTitle1').fadeOut(100);
+    $('#shakeTopTitle2').fadeIn(100);
+    $('#shakeTopTitle3').fadeOut(100);
     currentShakeStep = 2;
 
   });
@@ -716,6 +725,9 @@ $(document).ready(function(){
     $('#shakeInfoButton').attr('src','images/shakeInfoButtonSelected.png');
     transitionScenes($('#shakeVideoEmbed'), $('#shakeInfoImage'));
     $('#shakeVideo').attr('src','');
+    $('#shakeTopTitle1').fadeOut(100);
+    $('#shakeTopTitle2').fadeOut(100);
+    $('#shakeTopTitle3').fadeIn(100);
     currentShakeStep = 3;
 
   });
