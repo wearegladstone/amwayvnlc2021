@@ -394,6 +394,8 @@ $(document).ready(function(){
     $('#strongerTraditionalVideo').attr('src','https://player.vimeo.com/video/577953619');
     $('#traditionalWuxiButton').attr('src', 'images/traditionalWuxiButtonSelected.png');
     $('#traditionalMessageButton').attr('src', 'images/traditionalMessageButton.png');
+    $('#traditionalTopTitle1').fadeIn(100);
+    $('#traditionalTopTitle2').fadeOut(100);
     currentTraditionalVideo = 1;
 
   });
@@ -441,6 +443,8 @@ $(document).ready(function(){
     $('#strongerTraditionalVideo').attr('src','https://player.vimeo.com/video/577953619');
     $('#traditionalWuxiButton').attr('src', 'images/traditionalWuxiButtonSelected.png');
     $('#traditionalMessageButton').attr('src', 'images/traditionalMessageButton.png');
+    $('#traditionalTopTitle1').fadeIn(100);
+    $('#traditionalTopTitle2').fadeOut(100);
     currentTraditionalVideo = 1;
   });
 
@@ -448,6 +452,8 @@ $(document).ready(function(){
     $('#strongerTraditionalVideo').attr('src','https://player.vimeo.com/video/576698161');
     $('#traditionalWuxiButton').attr('src', 'images/traditionalWuxiButton.png');
     $('#traditionalMessageButton').attr('src', 'images/traditionalMessageButtonSelected.png');
+    $('#traditionalTopTitle1').fadeOut(100);
+    $('#traditionalTopTitle2').fadeIn(100);
     currentTraditionalVideo = 2;
   });
 
